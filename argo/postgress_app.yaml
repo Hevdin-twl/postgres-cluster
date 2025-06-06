@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Hevdin-twl/postgres-cluster.git
     targetRevision: main
-    path: postgres-cluster/argo
+    path: .
     directory:
       recurse: true
   destination:
