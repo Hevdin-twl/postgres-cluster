@@ -1,0 +1,19 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: my-postgres
+  namespace: default
+spec:
+  instances: 2  # 1 primary + 1 replica
+  imageName: ghcr.io/cloudnative-pg/postgresql:15
+  storage:
+    storageClass: standard
+    size: 1Gi
+  superuserSecret:
+    name: my-postgres-superuser
+  bootstrap:
+    initdb:
+      encoding: UTF8
+      localeCollate: C
+      localeCType: C
+
