@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/your-name/your-repo.git
+    repoURL: https://github.com/Hevdin-twl/postgres-cluster.git
     targetRevision: main
-    path: infra/postgres-cluster
+    path: postgres-cluster
     directory:
       recurse: true
   destination:
